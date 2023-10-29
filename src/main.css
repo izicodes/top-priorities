@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Onest&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Gideon+Roman&family=Gloock&family=Pixelify+Sans&family=Playfair:opsz@5..1200&family=Ysabeau+SC&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +14,92 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  gap: 2px;
+}
+body .right_side {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
-body .wrapper {
+body .left_side {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body .left_side #menu_section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-size: 1.1rem;
+  background-color: #f1f0f0;
+  color: #535352;
+  padding: 35px;
+  border-radius: 5px;
+  gap: 40px;
+  max-width: 80%;
+  font-family: "Onest", sans-serif;
+  box-shadow: 0px 2px 7px rgba(191, 191, 191, 0.808);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-body .wrapper #render_section {
+body .left_side #menu_section .title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+body .left_side #menu_section .title_container h1 {
+  font-family: "Bacasime Antique", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+body .left_side #menu_section .title_container span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+}
+body .left_side #menu_section .title_container span img {
+  width: 43%;
+}
+body .left_side #menu_section .options_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .left_side #menu_section .options_container h3 {
+  font-family: "Bacasime Antique", serif;
+  font-size: 2rem;
+}
+body .left_side #menu_section .options_container .select_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1rem;
+}
+body .left_side #menu_section .options_container .select_wrapper .select_item {
+  cursor: pointer;
+  flex: 0 0 calc(25% - 10px);
+  text-align: center;
+  border: 2px solid var(--main-colour);
+  padding: 6px 9px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+body #render_section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +113,7 @@ body .wrapper #render_section {
   -o-border-radius: 20px;
   box-shadow: 0px 2px 7px rgba(191, 191, 191, 0.808);
 }
-body .wrapper #render_section h1 {
+body #render_section h1 {
   text-align: center;
   padding: 7px 10px;
   border-bottom: 2px solid var(--secondary-colour);
@@ -45,12 +122,12 @@ body .wrapper #render_section h1 {
   margin-bottom: 10px;
   color: var(--text-colour);
 }
-body .wrapper #render_section .container {
+body #render_section .container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-body .wrapper #render_section .container .itemBox {
+body #render_section .container .itemBox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +147,7 @@ body .wrapper #render_section .container .itemBox {
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
 }
-body .wrapper #render_section .container .itemBox input[type=text] {
+body #render_section .container .itemBox input[type=text] {
   border: none;
   border-bottom: 2px solid var(--main-colour);
   outline: none;
@@ -78,7 +155,7 @@ body .wrapper #render_section .container .itemBox input[type=text] {
   padding-bottom: 3px;
   color: var(--text-colour);
 }
-body .wrapper #render_section .container .itemBox .checkmark {
+body #render_section .container .itemBox .checkmark {
   position: absolute;
   top: 6px;
   left: 0;
@@ -96,15 +173,15 @@ body .wrapper #render_section .container .itemBox .checkmark {
   justify-content: center;
   align-items: center;
   color: var(--bg-colour);
-  transition: 400ms;
-  -webkit-transition: 400ms;
-  -moz-transition: 400ms;
-  -ms-transition: 400ms;
-  -o-transition: 400ms;
+  transition: 250ms;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+  -ms-transition: 250ms;
+  -o-transition: 250ms;
 }
-body .wrapper #render_section .container .itemBox .checkmark:hover {
+body #render_section .container .itemBox .checkmark:hover {
   color: rgba(128, 128, 128, 0.466);
 }
-body .wrapper #render_section .container .itemBox .checkmark.clicked {
+body #render_section .container .itemBox .checkmark.clicked {
   color: var(--secondary-colour);
 }/*# sourceMappingURL=main.css.map */

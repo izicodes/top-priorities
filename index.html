@@ -4,50 +4,56 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- <link rel="stylesheet" href="styles.css" /> -->
-		<link rel="stylesheet" href="src/main.css">
+		<link rel="stylesheet" href="src/main.css" />
 		<title>Top Priorities Widget</title>
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="left_side">
 			<section id="menu_section">
-				<div class="title">
+				<div class="title_container">
 					<p>XiaCodes'</p>
 					<h1>Top Priorities List</h1>
-					<span><img src="https://img.shields.io/badge/Notion-000000.svg?style=for-the-badge&logo=Notion&logoColor=white" alt="">Notion widget</span>
+					<span><img src="https://img.shields.io/badge/Notion-000000.svg?style=for-the-badge&logo=Notion&logoColor=white" alt="" /> widget</span>
 				</div>
 
-				<div class="options">
-					<h2>Options</h2>
+				<div class="options_container">
 					<div class="select_theme">
 						<h3>Colour Theme</h3>
-						<div class="theme" data-theme="light">Light Theme</div>
-						<div class="theme" data-theme="dark">Dark Theme</div>
-						<div class="theme" data-theme="brown">Brown Theme</div>
-						<div class="theme" data-theme="pink">Pink Theme</div>
-						<div class="theme" data-theme="blue">Blue Theme</div>
-						<div class="theme" data-theme="green">Green Theme</div>
+						<div class="select_wrapper">
+							<div class="select_item" data-theme="light">Light</div>
+							<div class="select_item" data-theme="dark">Dark</div>
+							<div class="select_item" data-theme="brown">Brown</div>
+							<div class="select_item" data-theme="pink">Pink</div>
+							<div class="select_item" data-theme="blue">Blue</div>
+							<div class="select_item" data-theme="green">Green</div>
+						</div>
 					</div>
 					<div class="select_font_title">
 						<h3>Title's Font</h3>
-						<div class="theme" data-theme="light">Light Theme</div>
-						<div class="theme" data-theme="dark">Dark Theme</div>
-						<div class="theme" data-theme="brown">Brown Theme</div>
-						<div class="theme" data-theme="pink">Pink Theme</div>
-						<div class="theme" data-theme="blue">Blue Theme</div>
-						<div class="theme" data-theme="green">Green Theme</div>
+						<div class="select_wrapper">
+							<div class="select_item" data-tfont="geologica">Geologica</div>
+							<div class="select_item" data-tfont="pixelifysans">Pixelify Sans</div>
+							<div class="select_item" data-tfont="gideon">Gideon</div>
+							<div class="select_item" data-tfont="playfair">Playfair</div>
+							<div class="select_item" data-tfont="gloock">Gloock</div>
+							<div class="select_item" data-tfont="ysabeausc">Ysabeau SC</div>
+						</div>
 					</div>
 					<div class="select_font_body">
 						<h3>Body's Font</h3>
-						<div class="theme" data-theme="light">Light Theme</div>
-						<div class="theme" data-theme="dark">Dark Theme</div>
-						<div class="theme" data-theme="brown">Brown Theme</div>
-						<div class="theme" data-theme="pink">Pink Theme</div>
-						<div class="theme" data-theme="blue">Blue Theme</div>
-						<div class="theme" data-theme="green">Green Theme</div>
+						<div class="select_wrapper">
+							<div class="select_item" data-bfont="light">Light Theme</div>
+							<div class="select_item" data-bfont="dark">Dark Theme</div>
+							<div class="select_item" data-bfont="brown">Brown Theme</div>
+							<div class="select_item" data-bfont="pink">Pink Theme</div>
+							<div class="select_item" data-bfont="blue">Blue Theme</div>
+						</div>
 					</div>
 				</div>
 			</section>
+		</div>
 
+		<div class="right_side">
 			<section id="render_section">
 				<h1>Top Priorities</h1>
 				<div class="container">
