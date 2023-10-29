@@ -22,6 +22,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#render_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	background-color: var(--bg-colour);
 	padding: 15px;
@@ -39,7 +45,7 @@ body {
 	gap: 10px;
 }
 
-h1 {
+#render_section h1 {
 	text-align: center;
 	padding: 7px 10px;
 	border-bottom: 2px solid var(--secondary-colour);
@@ -102,17 +108,11 @@ input[type="text"] {
     -o-transition: 400ms;
 }
 
-/* .itemBox:hover input ~ .checkmark {
-    background-color: #c095c0;
-  } */
-
 
 .checkmark:hover {
     color: rgba(128, 128, 128, 0.466);
 }
 
-
-/* Style for clicked checkmark */
 .checkmark.clicked {
     color: var(--secondary-colour);
 }

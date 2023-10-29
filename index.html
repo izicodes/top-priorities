@@ -8,33 +8,42 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<h1>Top Priorities</h1>
-			<div class="container">
-				<div class="itemBox">
-					<span class="checkmark">✔</span>
-					<input type="text" />
+			<section id="menu_section">
+				<div class="title">
+					<p>XiaCodes'</p>
+					<h1>Top Priorities List</h1>
+					<span><img src="https://img.shields.io/badge/Notion-000000.svg?style=for-the-badge&logo=Notion&logoColor=white" alt="">Notion widget</span>
 				</div>
-				<div class="itemBox">
-					<span class="checkmark">✔</span>
-					<input type="text" />
-				</div>
-				<div class="itemBox">
-					<span class="checkmark">✔</span>
-					<input type="text" />
-				</div>
-			</div>
-		</div>
-		<script>
-			// JavaScript
-			document.addEventListener("DOMContentLoaded", function () {
-				const checkmarks = document.querySelectorAll(".checkmark");
 
-				checkmarks.forEach((checkmark) => {
-					checkmark.addEventListener("click", function () {
-						checkmark.classList.toggle("clicked");
-					});
-				});
-			});
-		</script>
+				<div class="options">
+					<h2>Options</h2>
+					<div class="select_theme">
+						<div class="theme" data-theme="pink">Pink Theme</div>
+						<div class="theme" data-theme="pink">Pink Theme</div>
+						<div class="theme" data-theme="pink">Pink Theme</div>
+						<div class="theme" data-theme="pink">Pink Theme</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="render_section">
+				<h1>Top Priorities</h1>
+				<div class="container">
+					<div class="itemBox">
+						<span class="checkmark">✔</span>
+						<input type="text" />
+					</div>
+					<div class="itemBox">
+						<span class="checkmark">✔</span>
+						<input type="text" />
+					</div>
+					<div class="itemBox">
+						<span class="checkmark">✔</span>
+						<input type="text" />
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="index.js"></script>
 	</body>
 </html>
