@@ -12,6 +12,11 @@
 // font-family: 'Playfair', serif;
 // font-family: 'Ysabeau SC', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu+Mono&display=swap');
+
+// font-family: 'Courier Prime', monospace;
+// font-family: 'Ubuntu Mono', monospace;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -42,7 +47,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-	} @else if $type == acen {
+	} @else if $type == acencol {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
