@@ -4,8 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- <link rel="stylesheet" href="styles.css" /> -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
-		<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="src/main.css" />
 		<title>Top Priorities Widget</title>
 	</head>
@@ -20,16 +24,16 @@
 
 				<div class="options_container">
 					<div class="select_widget_size">
-						<h3>Widget Size</h3>
-						<div class="select_wrapper">
+						<h3>Widget Size <i class="fa-solid fa-caret-down"></i></h3>
+						<div class="select_wrapper hide">
 							<div class="select_item" data-tfont="geologica">Small</div>
 							<div class="select_item" data-bfont="onest">Medium</div>
 							<div class="select_item" data-bfont="gideon">Large</div>
 						</div>
 					</div>
 					<div class="select_theme">
-						<h3>Colour Theme</h3>
-						<div class="select_wrapper">
+						<h3>Colour Theme <i class="fa-solid fa-caret-down"></i></h3>
+						<div class="select_wrapper hide">
 							<div class="select_item" data-theme="light">Light</div>
 							<div class="select_item" data-theme="dark">Dark</div>
 							<div class="select_item" data-theme="brown">Brown</div>
@@ -39,8 +43,8 @@
 						</div>
 					</div>
 					<div class="select_font_title">
-						<h3>Title's Font</h3>
-						<div class="select_wrapper">
+						<h3>Title's Font <i class="fa-solid fa-caret-down"></i></h3>
+						<div class="select_wrapper hide">
 							<div class="select_item" data-tfont="geologica">Geologica</div>
 							<div class="select_item" data-tfont="pixelifysans">Pixelify Sans</div>
 							<div class="select_item" data-tfont="gideon">Gideon</div>
@@ -50,8 +54,8 @@
 						</div>
 					</div>
 					<div class="select_font_body">
-						<h3>Body's Font</h3>
-						<div class="select_wrapper">
+						<h3>Body's Font <i class="fa-solid fa-caret-down"></i></h3>
+						<div class="select_wrapper hide">
 							<div class="select_item" data-tfont="geologica">Geologica</div>
 							<div class="select_item" data-bfont="onest">Onest</div>
 							<div class="select_item" data-bfont="gideon">Gideon</div>
@@ -60,11 +64,10 @@
 							<div class="select_item" data-bfont="courierprime">Courier</div>
 						</div>
 					</div>
-
-					<div class="embed_link_container">
-						<h3>Copy the embed link</h3>
-						<input type="text" />
-					</div>
+				</div>
+				<div class="embed_link_container">
+					<h3>Copy the embed link</h3>
+					<input type="text" />
 				</div>
 			</section>
 		</div>

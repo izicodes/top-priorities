@@ -48,6 +48,7 @@ body .left_side #menu_section {
   font-family: "Onest", sans-serif;
   box-shadow: 0px 2px 7px rgba(191, 191, 191, 0.808);
   height: 600px;
+  width: 620px;
   overflow: scroll;
   overflow-x: hidden;
   -webkit-border-radius: 5px;
@@ -110,11 +111,18 @@ body .left_side #menu_section .options_container {
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+  width: 100%;
 }
 body .left_side #menu_section .options_container h3 {
   font-family: "Bacasime Antique", serif;
   font-size: 2rem;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body .left_side #menu_section .options_container h3:hover {
+  color: #9b836c;
+  cursor: pointer;
 }
 body .left_side #menu_section .options_container .select_wrapper {
   display: flex;
@@ -182,6 +190,14 @@ body .left_side #menu_section .options_container .select_font_body .select_item:
 }
 body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(6) {
   font-family: "Courier Prime", monospace;
+}
+body .left_side #menu_section .embed_link_container input[type=text] {
+  border: 2px solid var(--main-colour);
+  border-radius: 7px;
+  background-color: #fbf9f9;
+  outline: none;
+  padding: 7px;
+  width: 100%;
 }
 body #render_section {
   display: flex;
@@ -270,4 +286,8 @@ body #render_section .container .itemBox .checkmark:hover {
 }
 body #render_section .container .itemBox .checkmark.clicked {
   color: var(--secondary-colour);
+}
+
+.hide {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */

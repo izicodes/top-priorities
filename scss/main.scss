@@ -37,6 +37,7 @@ body {
 			font-family: "Onest", sans-serif;
 			box-shadow: 0px 2px 7px rgba(191, 191, 191, 0.808);
 			height: 600px;
+			width: 620px;
 			overflow: scroll;
 			overflow-x: hidden;
 
@@ -103,11 +104,19 @@ body {
 			.options_container {
 				@include flex(jcencol);
 				gap: 40px;
+				width: 100%;
 
 				h3 {
 					font-family: "Bacasime Antique", serif;
 					font-size: 2rem;
 					margin-bottom: 10px;
+					display: flex;
+					justify-content: space-between;
+
+					&:hover {
+						color: #9b836c;
+						cursor: pointer;
+					}
 				}
 
 				.select_wrapper {
@@ -181,6 +190,17 @@ body {
 					&:nth-child(6) {
 						font-family: "Courier Prime", monospace;
 					}
+				}
+			}
+
+			.embed_link_container {
+				input[type="text"] {
+					border: 2px solid var(--main-colour);
+					border-radius: 7px;
+					background-color: #fbf9f9;
+					outline: none;
+					padding: 7px;
+					width: 100%;
 				}
 			}
 		}
@@ -280,4 +300,9 @@ body {
 			}
 		}
 	}
+}
+
+.hide {
+	// change to flex when unhidden
+	display: none !important;
 }
