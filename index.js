@@ -125,7 +125,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	checkmarks.forEach((checkmark) => {
 		checkmark.addEventListener("click", function () {
-			checkmark.classList.toggle("clicked");
+            checkmark.classList.toggle("clicked");
+            
+            let parent = checkmark.parentElement;
+
+            let textInput = parent.querySelector("input[type=text]");
+
+            if (checkmark.classList.contains("clicked")) {
+                textInput.style.textDecoration = "line-through";
+            } else {
+                textInput.style.textDecoration = "none";
+            }
 		});
 	});
 
