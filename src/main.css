@@ -296,8 +296,8 @@ body #render_section {
   background-color: var(--bg-colour);
   padding: 15px;
   border-radius: 20px;
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 450px;
+  max-width: 450px;
   min-height: 220px;
   max-height: 220px;
   -webkit-border-radius: 20px;

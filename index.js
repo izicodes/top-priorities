@@ -14,11 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	const defaultBodyFont = document.querySelector('[data-bfont="onest"]');
 	const defaultTitleFont = document.querySelector('[data-tfont="gloock"]');
 	const defaultTheme = document.querySelector('[data-theme="brown"]');
+	const defaultSize = document.querySelector('[data-size="250px"]');
 
 	setInterval(() => {
 		UpdateBodyFont();
 		UpdateTitleFont();
 		UpdateThemeColor();
+		UpdateWidgetSize();
 	}, 100);
 
 	selectClickEvent(widgetSizeItems);
@@ -28,9 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function UpdateThemeColor() {
 		let themeSelected = document.querySelector(".select_theme .mySelect");
-
-		// let currentMode = document.documentElement.classList;
-		// currentMode.remove(...currentMode);
 
 		if (themeSelected == null) {
 			defaultTheme.classList.toggle("mySelect");
@@ -46,32 +45,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				switch (themeName) {
 					case "brown":
-                        renderSection.classList.add("brown");
-                        renderSection.dataset.current = themeName;
+						renderSection.classList.add("brown");
+						renderSection.dataset.current = themeName;
 						break;
 					case "green":
-                        renderSection.classList.add("green");
-                        renderSection.dataset.current = themeName;
+						renderSection.classList.add("green");
+						renderSection.dataset.current = themeName;
 						break;
 					case "pink":
-                        renderSection.classList.add("pink");
-                        renderSection.dataset.current = themeName;
+						renderSection.classList.add("pink");
+						renderSection.dataset.current = themeName;
 						break;
 					case "blue":
-                        renderSection.classList.add("blue");
-                        renderSection.dataset.current = themeName;
+						renderSection.classList.add("blue");
+						renderSection.dataset.current = themeName;
 						break;
 					case "dark":
-                        renderSection.classList.add("dark");
-                        renderSection.dataset.current = themeName;
+						renderSection.classList.add("dark");
+						renderSection.dataset.current = themeName;
 						break;
 					case "light":
-                        renderSection.classList.add("light");
-                        renderSection.dataset.current = themeName;
+						renderSection.classList.add("light");
+						renderSection.dataset.current = themeName;
 						break;
 					default:
 						break;
 				}
+			}
+		}
+	}
+
+	function UpdateWidgetSize() {
+		let sizeSelected = document.querySelector(".select_widget_size .mySelect");
+
+		if (sizeSelected == null) {
+			defaultSize.classList.toggle("mySelect");
+			renderSection.style.maxWidth = defaultSize.dataset.size;
+			renderSection.style.minWidth = defaultSize.dataset.size;
+		} else {
+			let size = sizeSelected.dataset.size;
+
+			switch (size) {
+				case "250px":
+					renderSection.style.maxWidth = size;
+					renderSection.style.minWidth = size;
+					break;
+				case "350px":
+					renderSection.style.maxWidth = size;
+					renderSection.style.minWidth = size;
+					break;
+				case "450px":
+					renderSection.style.maxWidth = size;
+					renderSection.style.minWidth = size;
+					break;
+				default:
+					break;
 			}
 		}
 	}
