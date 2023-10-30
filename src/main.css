@@ -113,6 +113,17 @@ body .left_side #menu_section .options_container {
   gap: 40px;
   width: 100%;
 }
+body .left_side #menu_section .options_container .mySelect {
+  background-color: #cbb7ac;
+  transition: 250ms;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+  -ms-transition: 250ms;
+  -o-transition: 250ms;
+}
+body .left_side #menu_section .options_container .mySelect:hover {
+  background-color: #cbb7ac !important;
+}
 body .left_side #menu_section .options_container h3 {
   font-family: "Bacasime Antique", serif;
   font-size: 2rem;
@@ -152,7 +163,7 @@ body .left_side #menu_section .options_container .select_wrapper .select_item {
   -o-transition: 250ms;
 }
 body .left_side #menu_section .options_container .select_wrapper .select_item:hover {
-  background-color: #ded3d3;
+  background-color: rgba(205, 187, 170, 0.2941176471);
 }
 body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(1) {
   font-family: "Geologica", sans-serif;
@@ -174,10 +185,10 @@ body .left_side #menu_section .options_container .select_font_title .select_item
   font-family: "Ysabeau SC", sans-serif;
 }
 body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(1) {
-  font-family: "Geologica", sans-serif;
+  font-family: "Onest", sans-serif;
 }
 body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(2) {
-  font-family: "Onest", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(3) {
   font-family: "Gideon Roman", serif;
@@ -191,13 +202,49 @@ body .left_side #menu_section .options_container .select_font_body .select_item:
 body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(6) {
   font-family: "Courier Prime", monospace;
 }
-body .left_side #menu_section .embed_link_container input[type=text] {
+body .left_side #menu_section .embed_link_container {
+  width: 100%;
+}
+body .left_side #menu_section .embed_link_container .input_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+body .left_side #menu_section .embed_link_container .input_wrapper input[type=text] {
   border: 2px solid var(--main-colour);
   border-radius: 7px;
   background-color: #fbf9f9;
   outline: none;
   padding: 7px;
   width: 100%;
+  display: block;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  color: inherit;
+}
+body .left_side #menu_section .embed_link_container .input_wrapper button {
+  padding: 7px;
+  outline: none;
+  border: 2px solid var(--main-colour);
+  cursor: pointer;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  color: inherit;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+body .left_side #menu_section .embed_link_container .input_wrapper button:hover, body .left_side #menu_section .embed_link_container .input_wrapper button:focus, body .left_side #menu_section .embed_link_container .input_wrapper button:active {
+  background-color: rgba(205, 187, 170, 0.2941176471);
+}
+body .left_side #menu_section .embed_link_container h3 {
+  font-family: "Bacasime Antique", serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 body #render_section {
   display: flex;
@@ -207,6 +254,10 @@ body #render_section {
   background-color: var(--bg-colour);
   padding: 15px;
   border-radius: 20px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 220px;
+  max-height: 220px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -232,6 +283,7 @@ body #render_section .container .itemBox {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
   gap: 10px;
   padding: 6px;
   padding-left: 33px;
@@ -289,5 +341,7 @@ body #render_section .container .itemBox .checkmark.clicked {
 }
 
 .hide {
-  display: none !important;
+  opacity: 0.2;
+  position: absolute;
+  bottom: -100px;
 }/*# sourceMappingURL=main.css.map */

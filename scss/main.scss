@@ -106,6 +106,19 @@ body {
 				gap: 40px;
 				width: 100%;
 
+				.mySelect {
+					background-color: #cbb7ac;
+
+					&:hover {
+					background-color: #cbb7ac !important;
+					}
+					transition: 250ms;
+					-webkit-transition: 250ms;
+					-moz-transition: 250ms;
+					-ms-transition: 250ms;
+					-o-transition: 250ms;
+}
+
 				h3 {
 					font-family: "Bacasime Antique", serif;
 					font-size: 2rem;
@@ -139,7 +152,7 @@ body {
 						-o-border-radius: 7px;
 
 						&:hover {
-							background-color: #ded3d3;
+							background-color: #cdbbaa4b;
 						}
 						transition: 250ms;
 						-webkit-transition: 250ms;
@@ -173,10 +186,10 @@ body {
 
 				.select_font_body .select_item {
 					&:nth-child(1) {
-						font-family: "Geologica", sans-serif;
+						font-family: "Onest", sans-serif;
 					}
 					&:nth-child(2) {
-						font-family: "Onest", sans-serif;
+						font-family: "Geologica", sans-serif;
 					}
 					&:nth-child(3) {
 						font-family: "Gideon Roman", serif;
@@ -194,13 +207,52 @@ body {
 			}
 
 			.embed_link_container {
-				input[type="text"] {
-					border: 2px solid var(--main-colour);
-					border-radius: 7px;
-					background-color: #fbf9f9;
-					outline: none;
-					padding: 7px;
+				width: 100%;
+
+				.input_wrapper {
+					@include flex(jcen);
 					width: 100%;
+					gap: 10px;
+
+					input[type="text"] {
+						border: 2px solid var(--main-colour);
+						border-radius: 7px;
+						background-color: #fbf9f9;
+						outline: none;
+						padding: 7px;
+						width: 100%;
+						display: block;
+						font-family: 'Onest', sans-serif;
+						font-size: 1rem;
+						color: inherit;
+					}
+
+					button {
+						padding: 7px;
+						outline: none;
+						border: 2px solid var(--main-colour);
+						cursor: pointer;
+						font-family: 'Onest', sans-serif;
+						font-size: 1rem;
+						color: inherit;
+
+						&:hover, &:focus, &:active{
+							background-color: #cdbbaa4b;
+						}
+
+						border-radius: 7px;
+						-webkit-border-radius: 7px;
+						-moz-border-radius: 7px;
+						-ms-border-radius: 7px;
+						-o-border-radius: 7px;
+					}
+				}
+
+				h3 {
+					font-family: "Bacasime Antique", serif;
+					font-size: 2rem;
+					margin-bottom: 10px;
+					text-align: justify;
 				}
 			}
 		}
@@ -215,7 +267,10 @@ body {
 		background-color: var(--bg-colour);
 		padding: 15px;
 		border-radius: 20px;
-		// width: 300px;
+		min-width: 250px;
+		max-width: 250px;
+		min-height: 220px;
+		max-height: 220px;
 		-webkit-border-radius: 20px;
 		-moz-border-radius: 20px;
 		-ms-border-radius: 20px;
@@ -242,6 +297,7 @@ body {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				font-size: 1rem;
 				gap: 10px;
 				padding: 6px;
 				padding-left: 33px;
@@ -304,5 +360,8 @@ body {
 
 .hide {
 	// change to flex when unhidden
-	display: none !important;
+	// display: none !important;
+	opacity: 0.2;
+	position: absolute;
+	bottom: -100px;
 }

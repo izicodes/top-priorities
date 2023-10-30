@@ -1,7 +1,15 @@
 To Do List
 
-1) Have the font family be customizable
+1) Have the font family be customizable 
+- Added the options
+- Add functions to the options
+- Update the render 
 
 2) Have the text in the input resize when string gets longer
 
 3) Have 4 colour themes: light, dark, pink, blue, green, brown
+- Added the options
+- Add functions to the options
+- Update the render 
+
+4) Save the list to the local storage
