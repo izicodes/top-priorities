@@ -382,6 +382,12 @@ body #render_section .container .itemBox .checkmark.clicked {
   color: var(--secondary-colour);
 }
 
+.render_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hide {
   opacity: 0.2;
   position: absolute;

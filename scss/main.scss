@@ -44,6 +44,8 @@
 	--text-colour: #5d4e3f;
 }
 
+
+
 body {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -397,6 +399,10 @@ body {
 			}
 		}
 	}
+}
+
+.render_wrapper {
+	@include flex(normal)
 }
 
 .hide {

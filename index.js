@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const themeItems = document.querySelectorAll(".select_theme .select_item");
 	const titleFontItems = document.querySelectorAll(".select_font_title .select_item");
 	const bodyFontItems = document.querySelectorAll(".select_font_body .select_item");
+	const linkTextInput = document.querySelector("#linkTextInput");
+	const linkTextInputBtn = document.querySelector("#linkTextInputBtn");
 
 	//  Render Box variables
 	const renderH1 = document.querySelector("#render_section h1");
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		UpdateTitleFont();
 		UpdateThemeColor();
 		UpdateWidgetSize();
+		UpdateLink();
 	}, 100);
 
 	selectClickEvent(widgetSizeItems);
@@ -125,17 +128,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	checkmarks.forEach((checkmark) => {
 		checkmark.addEventListener("click", function () {
-            checkmark.classList.toggle("clicked");
-            
-            let parent = checkmark.parentElement;
+			checkmark.classList.toggle("clicked");
 
-            let textInput = parent.querySelector("input[type=text]");
+			let parent = checkmark.parentElement;
 
-            if (checkmark.classList.contains("clicked")) {
-                textInput.style.textDecoration = "line-through";
-            } else {
-                textInput.style.textDecoration = "none";
-            }
+			let textInput = parent.querySelector("input[type=text]");
+
+			if (checkmark.classList.contains("clicked")) {
+				textInput.style.textDecoration = "line-through";
+			} else {
+				textInput.style.textDecoration = "none";
+			}
 		});
 	});
 
@@ -229,4 +232,33 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		});
 	}
+
+	function UpdateLink() {
+		//  Getting the current URL from the tab
+		let url = new URL(window.location.href);
+		let defaultLink = url.href;
+		defaultLink = defaultLink.replace("index", "render");
+		console.log(defaultLink);
+
+		//  The variables of the chosen options
+		let chosenSize = document.querySelector(".select_widget_size .mySelect").dataset.size;
+		let chosenTheme = document.querySelector(".select_theme .mySelect").dataset.theme;
+		let chosenTitleFont = document.querySelector(".select_font_title .mySelect").dataset.tfont;
+		let chosenBodyFont = document.querySelector(".select_font_body .mySelect").dataset.bfont;
+
+		let query = "?size=" + chosenSize + "&theme=" + chosenTheme + "&tfont=" + chosenTitleFont + "&bfont=" + chosenBodyFont;
+
+		let newLink = defaultLink + query + "&task=widget1";
+
+		console.log(newLink);
+
+		linkTextInput.value = newLink;
+	}
+
+	linkTextInputBtn.addEventListener("click", () => {
+		let link = linkTextInput.value;
+		let a = document.createElement("a");
+		a.href = link;
+		a.click();
+	})
 });

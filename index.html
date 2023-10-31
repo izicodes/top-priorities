@@ -64,12 +64,20 @@
 							<div class="select_item" data-bfont="courierprime">Courier</div>
 						</div>
 					</div>
+					<div class="give_unique_name">
+						<h3>Give it a name <i class="fa-solid fa-caret-down"></i></h3>
+						<p>If you want to have multiple versions of this widget in your Notion page or <strong>anywhere</strong> in your Notion workspace, your widgets need a unique name! No special symbols or spaces.</p>
+
+						<input type="text" id="uniqueNameTextInput" placeholder="e.g. studylist" />
+
+						<p>If left empty, it is assumed you only want to use <strong>one</strong> version of this widget and will be given a default name.</p>
+					</div>
 				</div>
-				<div class="embed_link_container">
+				<div class="embed_link_container con">
 					<h3>Copy the embed link</h3>
 					<div class="input_wrapper">
-						<input type="text" />
-						<button type="button">Copy</button>
+						<input type="text" id="linkTextInput" />
+						<button type="button" id="linkTextInputBtn">Copy</button>
 					</div>
 				</div>
 			</section>
@@ -81,15 +89,15 @@
 				<div class="container">
 					<div class="itemBox">
 						<span class="checkmark">✔</span>
-						<input type="text" />
+						<input type="text" value="Sample task item" />
 					</div>
 					<div class="itemBox">
 						<span class="checkmark">✔</span>
-						<input type="text" />
+						<input type="text" value="Sample task item" />
 					</div>
 					<div class="itemBox">
 						<span class="checkmark">✔</span>
-						<input type="text"  />
+						<input type="text" value="Sample task item" />
 					</div>
 				</div>
 			</section>
