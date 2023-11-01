@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <link rel="stylesheet" href="styles.css" /> -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,7 +12,7 @@
 		<link rel="stylesheet" href="src/main.css" />
 		<title>Top Priorities Widget</title>
 	</head>
-	<body>
+	<body class="buildMode">
 		<div class="left_side">
 			<section id="menu_section">
 				<div class="title_container">
@@ -65,12 +64,18 @@
 						</div>
 					</div>
 					<div class="give_unique_name">
-						<h3>Give it a name <i class="fa-solid fa-caret-down"></i></h3>
-						<p>If you want to have multiple versions of this widget in your Notion page or <strong>anywhere</strong> in your Notion workspace, your widgets need a unique name! No special symbols or spaces.</p>
+						<h3>Give it a name (optional)<i class="fa-solid fa-caret-down"></i></h3>
+						<div class="select_wrapper hide">
+							<p>
+								If you want to have multiple versions of this widget in your Notion page or <strong>anywhere</strong> in your Notion workspace, each of your widgets need a unique name! <strong><i> No special symbols or
+									spaces.</i></strong>
+							</p>
 
-						<input type="text" id="uniqueNameTextInput" placeholder="e.g. studylist" />
+							<input type="text" id="uniqueNameTextInput" placeholder="e.g. studylist" />
 
-						<p>If left empty, it is assumed you only want to use <strong>one</strong> version of this widget and will be given a default name.</p>
+							<p id="extraInfo">If left empty, it is assumed you only want to use <strong>one</strong> version of this widget and will be given a default name.</p>
+							<p id="errorMsg" data-error="off"></p>
+						</div>
 					</div>
 				</div>
 				<div class="embed_link_container con">

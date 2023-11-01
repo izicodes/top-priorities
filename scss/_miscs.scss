@@ -3,7 +3,7 @@
 // font-family: 'Bacasime Antique', serif;
 // font-family: 'Onest', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Gideon+Roman&family=Gloock&family=Pixelify+Sans&family=Playfair:opsz@5..1200&family=Ysabeau+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Gideon+Roman&family=Gloock&family=Pixelify+Sans&family=Playfair:opsz@5..1200&family=Ysabeau+SC&display=swap");
 
 // font-family: 'Geologica', sans-serif;
 // font-family: 'Gideon Roman', serif;
@@ -12,7 +12,7 @@
 // font-family: 'Playfair', serif;
 // font-family: 'Ysabeau SC', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu+Mono&display=swap");
 
 // font-family: 'Courier Prime', monospace;
 // font-family: 'Ubuntu Mono', monospace;
@@ -21,6 +21,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	&::selection {
+		background-color: #cbb7ac;
+	}
 }
 
 @mixin flex($type) {
@@ -54,14 +58,14 @@
 	}
 }
 
-@mixin grid-center-last( $columns ) {
+@mixin grid-center-last($columns) {
 	$total_columns: $columns * 2;
 	$span: $total_columns / $columns;
 	$offset: $columns - 1;
-	$nth-child: if( $columns % 2 == 0, 'odd', 'even' );
+	$nth-child: if($columns % 2 == 0, "odd", "even");
 
 	display: grid;
-	grid-template-columns: repeat( $total_columns, 1fr );
+	grid-template-columns: repeat($total_columns, 1fr);
 
 	& > * {
 		grid-column: span $span;

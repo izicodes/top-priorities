@@ -6,6 +6,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-moz-selection {
+  background-color: #cbb7ac;
+}
+*::selection {
+  background-color: #cbb7ac;
+}
 
 :root {
   --bg-colour: #ffffff;
@@ -176,6 +182,36 @@ body .left_side #menu_section .options_container h3 {
 body .left_side #menu_section .options_container h3:hover {
   color: #9b836c;
   cursor: pointer;
+}
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper {
+  display: block;
+}
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper #extraInfo, body .left_side #menu_section .options_container .give_unique_name .select_wrapper #errorMsg {
+  font-size: 0.9rem;
+}
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper #extraInfo {
+  border-left: 4px solid #5d4e3f;
+  padding-left: 15px;
+}
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper #errorMsg {
+  color: #ba1616;
+  padding: 6px 0;
+}
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper p {
+  text-align: justify;
+}
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper input {
+  border: 2px solid #cbb7ac;
+  border-radius: 7px;
+  background-color: #fbf9f9;
+  outline: none;
+  padding: 7px;
+  width: 100%;
+  display: block;
+  font-family: "Onest", sans-serif;
+  font-size: 1rem;
+  color: inherit;
+  margin: 20px 0;
 }
 body .left_side #menu_section .options_container .select_wrapper {
   display: flex;
@@ -382,7 +418,7 @@ body #render_section .container .itemBox .checkmark.clicked {
   color: var(--secondary-colour);
 }
 
-.render_wrapper {
+.renderMode {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,5 +427,5 @@ body #render_section .container .itemBox .checkmark.clicked {
 .hide {
   opacity: 0.2;
   position: absolute;
-  bottom: -100px;
+  bottom: -1000px;
 }/*# sourceMappingURL=main.css.map */

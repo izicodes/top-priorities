@@ -45,7 +45,6 @@
 }
 
 
-
 body {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -149,14 +148,14 @@ body {
 					background-color: #cbb7ac;
 
 					&:hover {
-					background-color: #cbb7ac !important;
+						background-color: #cbb7ac !important;
 					}
 					transition: 250ms;
 					-webkit-transition: 250ms;
 					-moz-transition: 250ms;
 					-ms-transition: 250ms;
 					-o-transition: 250ms;
-}
+				}
 
 				h3 {
 					font-family: "Bacasime Antique", serif;
@@ -168,6 +167,42 @@ body {
 					&:hover {
 						color: #9b836c;
 						cursor: pointer;
+					}
+				}
+
+				.give_unique_name .select_wrapper {
+					display: block;
+
+					#extraInfo, #errorMsg {
+						font-size: 0.9rem;
+					}
+
+					#extraInfo {
+						border-left: 4px solid #5d4e3f;
+						padding-left: 15px;
+					}
+
+					#errorMsg {
+						color: #ba1616;
+						padding: 6px 0;
+					}
+
+					p {
+						text-align: justify;
+					}
+
+					input {
+						border: 2px solid #cbb7ac;
+						border-radius: 7px;
+						background-color: #fbf9f9;
+						outline: none;
+						padding: 7px;
+						width: 100%;
+						display: block;
+						font-family: "Onest", sans-serif;
+						font-size: 1rem;
+						color: inherit;
+						margin: 20px 0;
 					}
 				}
 
@@ -261,7 +296,7 @@ body {
 						padding: 7px;
 						width: 100%;
 						display: block;
-						font-family: 'Onest', sans-serif;
+						font-family: "Onest", sans-serif;
 						font-size: 1rem;
 						color: inherit;
 					}
@@ -271,11 +306,13 @@ body {
 						outline: none;
 						border: 2px solid #cbb7ac;
 						cursor: pointer;
-						font-family: 'Onest', sans-serif;
+						font-family: "Onest", sans-serif;
 						font-size: 1rem;
 						color: inherit;
 
-						&:hover, &:focus, &:active{
+						&:hover,
+						&:focus,
+						&:active {
 							background-color: #cdbbaa4b;
 						}
 
@@ -296,8 +333,6 @@ body {
 			}
 		}
 	}
-
-	
 
 	//  The Render Section
 	#render_section {
@@ -401,8 +436,8 @@ body {
 	}
 }
 
-.render_wrapper {
-	@include flex(normal)
+.renderMode {
+	@include flex(normal);
 }
 
 .hide {
@@ -410,5 +445,5 @@ body {
 	// display: none !important;
 	opacity: 0.2;
 	position: absolute;
-	bottom: -100px;
+	bottom: -1000px;
 }
