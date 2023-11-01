@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		const titleFontItems = document.querySelectorAll(".select_font_title .select_item");
 		const bodyFontItems = document.querySelectorAll(".select_font_body .select_item");
 		const linkTextInput = document.querySelector("#linkTextInput");
-		const linkTextInputBtn = document.querySelector("#linkTextInputBtn");
+		const widgetPagePreviewBtn = document.querySelector("#widgetPagePreviewBtn");
+		const copyLinkBtn = document.querySelector("#copyLinkBtn");
 		const uniqueNameTextInput = document.querySelector("#uniqueNameTextInput");
 
 		//  Render Box variables
@@ -259,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			uniqueNameTextInput.style.borderColor = "#cbb7ac";
 			document.querySelector("#errorMsg").style.opacity = 0;
 			document.querySelector("#errorMsg").dataset.error = "off";
-			linkTextInputBtn.style.cursor = "pointer";
+			widgetPagePreviewBtn.style.cursor = "pointer";
 			linkTextInput.style.cursor = "text";
 
 			if (widgetID == "") {
@@ -279,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			uniqueNameTextInput.style.borderColor = "#ba1616";
 			document.querySelector("#errorMsg").innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> ` + error;
 			linkTextInput.value = "";
-			linkTextInputBtn.style.cursor = "no-drop";
+			widgetPagePreviewBtn.style.cursor = "no-drop";
 			linkTextInput.style.cursor = "no-drop";
 			document.querySelector("#errorMsg").dataset.error = "on";
 		}
@@ -302,12 +303,25 @@ document.addEventListener("DOMContentLoaded", function () {
 			linkTextInput.value = newLink;
 		}
 
-		linkTextInputBtn.addEventListener("click", () => {
+		widgetPagePreviewBtn.addEventListener("click", () => {
 			if (document.querySelector("#errorMsg").dataset.error == "off") {
 				let link = linkTextInput.value;
 				let a = document.createElement("a");
 				a.href = link;
 				a.click();
+			}
+		});
+
+		copyLinkBtn.addEventListener("click", () => {
+			if (document.querySelector("#errorMsg").dataset.error == "off") {
+				linkTextInput.select();
+				linkTextInput.setSelectionRange(0, 99999); // For mobile devices
+				navigator.clipboard.writeText(linkTextInput.value);
+				linkTextInput.style.boxShadow = "0px 0px 4px #58ac5cdf";
+
+				setTimeout(() => {
+					linkTextInput.style.boxShadow = "none";
+				}, 1500);
 			}
 		});
 	}

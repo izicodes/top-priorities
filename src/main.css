@@ -6,12 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-*::-moz-selection {
-  background-color: #cbb7ac;
-}
-*::selection {
-  background-color: #cbb7ac;
-}
 
 :root {
   --bg-colour: #ffffff;
@@ -42,7 +36,7 @@
 }
 
 .dark {
-  --bg-colour: #201e1e;
+  --bg-colour: #202020;
   --main-colour: #c8c8c8;
   --secondary-colour: #d5cfcf;
   --text-colour: #dad7d7;
@@ -186,7 +180,8 @@ body .left_side #menu_section .options_container h3:hover {
 body .left_side #menu_section .options_container .give_unique_name .select_wrapper {
   display: block;
 }
-body .left_side #menu_section .options_container .give_unique_name .select_wrapper #extraInfo, body .left_side #menu_section .options_container .give_unique_name .select_wrapper #errorMsg {
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper #extraInfo,
+body .left_side #menu_section .options_container .give_unique_name .select_wrapper #errorMsg {
   font-size: 0.9rem;
 }
 body .left_side #menu_section .options_container .give_unique_name .select_wrapper #extraInfo {
@@ -196,6 +191,7 @@ body .left_side #menu_section .options_container .give_unique_name .select_wrapp
 body .left_side #menu_section .options_container .give_unique_name .select_wrapper #errorMsg {
   color: #ba1616;
   padding: 6px 0;
+  color: rgba(88, 172, 92, 0.8745098039);
 }
 body .left_side #menu_section .options_container .give_unique_name .select_wrapper p {
   text-align: justify;
@@ -286,6 +282,8 @@ body .left_side #menu_section .embed_link_container {
 body .left_side #menu_section .embed_link_container .input_wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   gap: 10px;
 }
@@ -341,6 +339,12 @@ body #render_section {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+}
+body #render_section::-moz-selection {
+  background-color: var(--main-colour) !important;
+}
+body #render_section::selection {
+  background-color: var(--main-colour) !important;
 }
 body #render_section h1 {
   text-align: center;

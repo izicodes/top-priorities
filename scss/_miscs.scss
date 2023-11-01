@@ -21,10 +21,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
-	&::selection {
-		background-color: #cbb7ac;
-	}
 }
 
 @mixin flex($type) {

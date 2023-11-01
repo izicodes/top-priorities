@@ -26,7 +26,7 @@
 	--text-colour: #ba5e70;
 }
 .dark {
-	--bg-colour: #201e1e;
+	--bg-colour: #202020;
 	--main-colour: #c8c8c8;
 	--secondary-colour: #d5cfcf;
 	--text-colour: #dad7d7;
@@ -43,7 +43,6 @@
 	--secondary-colour: #8b7866;
 	--text-colour: #5d4e3f;
 }
-
 
 body {
 	display: grid;
@@ -173,7 +172,8 @@ body {
 				.give_unique_name .select_wrapper {
 					display: block;
 
-					#extraInfo, #errorMsg {
+					#extraInfo,
+					#errorMsg {
 						font-size: 0.9rem;
 					}
 
@@ -185,6 +185,7 @@ body {
 					#errorMsg {
 						color: #ba1616;
 						padding: 6px 0;
+						color: #58ac5cdf;
 					}
 
 					p {
@@ -284,7 +285,7 @@ body {
 				width: 100%;
 
 				.input_wrapper {
-					@include flex(jcen);
+					@include flex(column);
 					width: 100%;
 					gap: 10px;
 
@@ -343,6 +344,10 @@ body {
 		background-color: var(--bg-colour);
 		padding: 15px;
 		border-radius: 20px;
+
+		&::selection {
+			background-color: var(--main-colour) !important;
+		}
 
 		min-width: 450px;
 		max-width: 450px;
