@@ -1,19 +1,166 @@
-/* Phones */
-@media screen and (max-width: 500px) {
+@import "miscs";
 
-}
+// /* Phones */
+@media screen and (max-width: 500px) {
+    body {
+		grid-template-rows: auto;
+		grid-template-columns: 1fr;
+		overflow: auto;
+		overflow-x: hidden;
+		max-height: 80vh;
+		gap: 10%;
+
+		.left_side {
+			justify-content: center !important;
+
+			/* The Menu Section */
+			#menu_section {
+				max-width: 100% !important;
+				width: 80% !important;
+				margin-top: 40px;
+				padding: 35px;
+				padding-right: 35px;
+
+				.title_container {
+					gap: 13px;
+
+					h1 {
+						font-size: 1.9rem;
+						text-align: center;
+					}
+
+					img {
+						width: 40%;
+					}
+				}
+
+				.options_container {
+					@include flex(jcencol);
+					gap: 35px;
+					width: 100%;
+
+					h3 {
+						font-size: 1.6rem;
+						margin-bottom: 15px;
+					}
+
+					.select_item {
+						font-size: 0.9rem;
+						flex: 0 0 calc(33.3% - 10px);
+					}
+
+					.select_font_title .select_item {
+						font-size: 0.8rem;
+						&:nth-child(1) {
+							font-family: "Gloock", serif;
+							font-size: 0.95rem;
+						}
+						&:nth-child(2) {
+							font-family: "Geologica", sans-serif;
+						}
+						&:nth-child(3) {
+							font-family: "Pixelify Sans", sans-serif;
+						}
+						&:nth-child(4) {
+							font-family: "Gideon Roman", serif;
+						}
+						&:nth-child(5) {
+							font-family: "Playfair", serif;
+						}
+						&:nth-child(6) {
+							font-family: "Ysabeau SC", sans-serif;
+						}
+					}
+
+					.select_font_body .select_item {
+						font-size: 0.8rem;
+						&:nth-child(1) {
+							font-family: "Onest", sans-serif;
+						}
+						&:nth-child(2) {
+							font-family: "Geologica", sans-serif;
+						}
+						&:nth-child(3) {
+							font-family: "Gideon Roman", serif;
+						}
+						&:nth-child(4) {
+							font-family: "Playfair", serif;
+						}
+						&:nth-child(5) {
+							font-family: "Ubuntu Mono", monospace;
+						}
+						&:nth-child(6) {
+							font-family: "Courier Prime", monospace;
+						}
+					}
+				}
+
+				.embed_link_container {
+					width: 100%;
+
+					h3 {
+                            font-size: 1.6rem;
+                            margin-bottom: 15px;
+                            text-align: left;
+                        }
+
+					.input_wrapper {
+						@include flex(column);
+						width: 100%;
+						gap: 10px;
+
+                        
+
+						input[type="text"] {
+							font-size: 0.9rem;
+						}
+
+						div {
+							display: flex;
+							justify-content: space-around;
+							width: 100%;
+                            gap: 10px;
+						}
+
+						button {
+							padding: 6px;
+							font-size: 0.9rem;
+                            width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.right_side {
+			height: auto !important;
+			width: 100%;
+
+			#render_section {
+				margin-bottom: 70px;
+				transform: scale(0.9);
+				-webkit-transform: scale(0.9);
+				-moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				-o-transform: scale(0.9);
+			}
+		}
+	}
+
+	.hide {
+		top: -508px;
+		bottom: 1168px;
+	}
+  }
 
 /* Tablets */
-@media screen and (min-width: 501px) and (max-width: 767px) {
-
-}
+// @media screen and (min-width: 501px) and (max-width: 767px) {
+// }
 
 /* Small Screens - Laptop & Computer */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-
-}
+// @media screen and (min-width: 768px) and (max-width: 1200px) {
+// }
 
 /* Large Screens - Laptop & Computer */
-@media screen and (min-width: 1201px) {
-
-}
+// @media screen and (min-width: 1201px) {
+// }

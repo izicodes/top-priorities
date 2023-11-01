@@ -1,4 +1,147 @@
-/* Phones */
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Onest&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Gideon+Roman&family=Gloock&family=Pixelify+Sans&family=Playfair:opsz@5..1200&family=Ysabeau+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 80vh;
+    gap: 10%;
+  }
+  body .left_side {
+    justify-content: center !important;
+    /* The Menu Section */
+  }
+  body .left_side #menu_section {
+    max-width: 100% !important;
+    width: 80% !important;
+    margin-top: 40px;
+    padding: 35px;
+    padding-right: 35px;
+  }
+  body .left_side #menu_section .title_container {
+    gap: 13px;
+  }
+  body .left_side #menu_section .title_container h1 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  body .left_side #menu_section .title_container img {
+    width: 40%;
+  }
+  body .left_side #menu_section .options_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+  }
+  body .left_side #menu_section .options_container h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  body .left_side #menu_section .options_container .select_item {
+    font-size: 0.9rem;
+    flex: 0 0 calc(33.3% - 10px);
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item {
+    font-size: 0.8rem;
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(1) {
+    font-family: "Gloock", serif;
+    font-size: 0.95rem;
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(2) {
+    font-family: "Geologica", sans-serif;
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(3) {
+    font-family: "Pixelify Sans", sans-serif;
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(4) {
+    font-family: "Gideon Roman", serif;
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(5) {
+    font-family: "Playfair", serif;
+  }
+  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(6) {
+    font-family: "Ysabeau SC", sans-serif;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item {
+    font-size: 0.8rem;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(1) {
+    font-family: "Onest", sans-serif;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(2) {
+    font-family: "Geologica", sans-serif;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(3) {
+    font-family: "Gideon Roman", serif;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(4) {
+    font-family: "Playfair", serif;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(5) {
+    font-family: "Ubuntu Mono", monospace;
+  }
+  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(6) {
+    font-family: "Courier Prime", monospace;
+  }
+  body .left_side #menu_section .embed_link_container {
+    width: 100%;
+  }
+  body .left_side #menu_section .embed_link_container h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  body .left_side #menu_section .embed_link_container .input_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  body .left_side #menu_section .embed_link_container .input_wrapper input[type=text] {
+    font-size: 0.9rem;
+  }
+  body .left_side #menu_section .embed_link_container .input_wrapper div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+  }
+  body .left_side #menu_section .embed_link_container .input_wrapper button {
+    padding: 6px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  body .right_side {
+    height: auto !important;
+    width: 100%;
+  }
+  body .right_side #render_section {
+    margin-bottom: 70px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+  .hide {
+    top: -508px;
+    bottom: 1168px;
+  }
+}
 /* Tablets */
 /* Small Screens - Laptop & Computer */
 /* Large Screens - Laptop & Computer *//*# sourceMappingURL=responsive.css.map */

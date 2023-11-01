@@ -185,7 +185,6 @@ body {
 					#errorMsg {
 						color: #ba1616;
 						padding: 6px 0;
-						color: #58ac5cdf;
 					}
 
 					p {
@@ -441,7 +440,7 @@ body {
 	}
 }
 
-.renderMode {
+.render_wrapper {
 	@include flex(normal);
 }
 
