@@ -205,16 +205,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	checkmarks.forEach((checkmark) => {
 		checkmark.addEventListener("click", function () {
-			checkmark.classList.toggle("clicked");
-
+			const icon = checkmark.querySelector("i");
 			let parent = checkmark.parentElement;
-
 			let textInput = parent.querySelector("input[type=text]");
 
-			if (checkmark.classList.contains("clicked")) {
-				textInput.style.textDecoration = "line-through";
-			} else {
+			if (icon.classList.contains("fa-check")) {
+				icon.classList.remove("fa-check");
 				textInput.style.textDecoration = "none";
+			} else {
+				icon.classList.add("fa-check");
+				textInput.style.textDecoration = "line-through";
 			}
 		});
 	});
@@ -271,7 +271,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		let defaultLink = url.href;
 
 		defaultLink = defaultLink.replace("index", "r");
-		console.log(defaultLink);
 
 		//  The variables of the chosen options
 		let chosenSize = document.querySelector(".select_widget_size .mySelect").dataset.size;

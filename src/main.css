@@ -407,18 +407,8 @@ body #render_section .container .itemBox .checkmark {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--bg-colour);
-  transition: 250ms;
-  -webkit-transition: 250ms;
-  -moz-transition: 250ms;
-  -ms-transition: 250ms;
-  -o-transition: 250ms;
-}
-body #render_section .container .itemBox .checkmark:hover {
-  color: rgba(128, 128, 128, 0.466);
-}
-body #render_section .container .itemBox .checkmark.clicked {
-  color: var(--secondary-colour);
+  color: var(--text-colour);
+  font-size: 0.8rem;
 }
 
 .render_wrapper {

@@ -421,19 +421,20 @@ body {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					color: var(--bg-colour);
-					transition: 250ms;
-					-webkit-transition: 250ms;
-					-moz-transition: 250ms;
-					-ms-transition: 250ms;
-					-o-transition: 250ms;
-					&:hover {
-						color: rgba(128, 128, 128, 0.466);
-					}
+					color: var(--text-colour);
+					font-size: 0.8rem;
+					// transition: 250ms;
+					// -webkit-transition: 250ms;
+					// -moz-transition: 250ms;
+					// -ms-transition: 250ms;
+					// -o-transition: 250ms;
+					// &:hover {
+					// 	color: rgba(128, 128, 128, 0.466);
+					// }
 
-					&.clicked {
-						color: var(--secondary-colour);
-					}
+					// &.clicked {
+					// 	color: var(--secondary-colour);
+					// }
 				}
 			}
 		}

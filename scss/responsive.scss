@@ -2,28 +2,41 @@
 
 // /* Phones */
 @media screen and (max-width: 500px) {
-    body {
+	body #menu_section {
+		max-width: 350px !important;
+		margin-top: 40px;
+		padding: 35px;
+		padding-right: 35px;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	body #menu_section {
+		max-width: 450px !important;
+		margin-top: 40px;
+		padding: 35px;
+		padding-right: 35px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
 		grid-template-rows: auto;
 		grid-template-columns: 1fr;
 		overflow: auto;
 		overflow-x: hidden;
 		max-height: 80vh;
-		gap: 10%;
-        max-width: 100%;
-        justify-items: center;
-        // padding-right: 10px;
+		gap: 5%;
+		max-width: 100%;
+		justify-items: center;
+		grid-auto-flow: row-reverse;
 
 		.left_side {
 			justify-content: center !important;
-            max-width: 100% !important;
+			max-width: 100% !important;
+			order: -1;
 
 			/* The Menu Section */
 			#menu_section {
-				max-width: 350px !important;
-				margin-top: 40px;
-				padding: 35px;
-				padding-right: 35px;
-
 				.title_container {
 					gap: 13px;
 
@@ -54,47 +67,10 @@
 
 					.select_font_title .select_item {
 						font-size: 0.8rem;
-						&:nth-child(1) {
-							font-family: "Gloock", serif;
-							font-size: 0.95rem;
-						}
-						&:nth-child(2) {
-							font-family: "Geologica", sans-serif;
-						}
-						&:nth-child(3) {
-							font-family: "Pixelify Sans", sans-serif;
-						}
-						&:nth-child(4) {
-							font-family: "Gideon Roman", serif;
-						}
-						&:nth-child(5) {
-							font-family: "Playfair", serif;
-						}
-						&:nth-child(6) {
-							font-family: "Ysabeau SC", sans-serif;
-						}
 					}
 
 					.select_font_body .select_item {
 						font-size: 0.8rem;
-						&:nth-child(1) {
-							font-family: "Onest", sans-serif;
-						}
-						&:nth-child(2) {
-							font-family: "Geologica", sans-serif;
-						}
-						&:nth-child(3) {
-							font-family: "Gideon Roman", serif;
-						}
-						&:nth-child(4) {
-							font-family: "Playfair", serif;
-						}
-						&:nth-child(5) {
-							font-family: "Ubuntu Mono", monospace;
-						}
-						&:nth-child(6) {
-							font-family: "Courier Prime", monospace;
-						}
 					}
 				}
 
@@ -102,17 +78,15 @@
 					width: 100%;
 
 					h3 {
-                            font-size: 1.6rem;
-                            margin-bottom: 15px;
-                            text-align: left;
-                        }
+						font-size: 1.6rem;
+						margin-bottom: 15px;
+						text-align: left;
+					}
 
 					.input_wrapper {
 						@include flex(column);
 						width: 100%;
 						gap: 10px;
-
-                        
 
 						input[type="text"] {
 							font-size: 0.9rem;
@@ -122,13 +96,13 @@
 							display: flex;
 							justify-content: space-around;
 							width: 100%;
-                            gap: 10px;
+							gap: 10px;
 						}
 
 						button {
 							padding: 6px;
 							font-size: 0.8rem;
-                            width: 100%;
+							width: 100%;
 						}
 					}
 				}
@@ -136,9 +110,9 @@
 		}
 
 		.right_side {
+			order: 1;
 			height: auto !important;
-            max-width: 400px !important;
-
+			max-width: 400px !important;
 
 			#render_section {
 				margin-bottom: 70px;
@@ -147,7 +121,7 @@
 				-moz-transform: scale(0.75);
 				-ms-transform: scale(0.75);
 				-o-transform: scale(0.75);
-}
+			}
 		}
 	}
 
@@ -155,7 +129,7 @@
 		top: -508px;
 		bottom: 1168px;
 	}
-  }
+}
 
 /* Tablets */
 // @media screen and (min-width: 501px) and (max-width: 767px) {

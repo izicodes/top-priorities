@@ -8,26 +8,38 @@
 }
 
 @media screen and (max-width: 500px) {
+  body #menu_section {
+    max-width: 350px !important;
+    margin-top: 40px;
+    padding: 35px;
+    padding-right: 35px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  body #menu_section {
+    max-width: 450px !important;
+    margin-top: 40px;
+    padding: 35px;
+    padding-right: 35px;
+  }
+}
+@media screen and (max-width: 800px) {
   body {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     overflow: auto;
     overflow-x: hidden;
     max-height: 80vh;
-    gap: 10%;
+    gap: 5%;
     max-width: 100%;
     justify-items: center;
+    grid-auto-flow: row-reverse;
   }
   body .left_side {
     justify-content: center !important;
     max-width: 100% !important;
+    order: -1;
     /* The Menu Section */
-  }
-  body .left_side #menu_section {
-    max-width: 350px !important;
-    margin-top: 40px;
-    padding: 35px;
-    padding-right: 35px;
   }
   body .left_side #menu_section .title_container {
     gap: 13px;
@@ -57,45 +69,8 @@
   body .left_side #menu_section .options_container .select_font_title .select_item {
     font-size: 0.8rem;
   }
-  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(1) {
-    font-family: "Gloock", serif;
-    font-size: 0.95rem;
-  }
-  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(2) {
-    font-family: "Geologica", sans-serif;
-  }
-  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(3) {
-    font-family: "Pixelify Sans", sans-serif;
-  }
-  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(4) {
-    font-family: "Gideon Roman", serif;
-  }
-  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(5) {
-    font-family: "Playfair", serif;
-  }
-  body .left_side #menu_section .options_container .select_font_title .select_item:nth-child(6) {
-    font-family: "Ysabeau SC", sans-serif;
-  }
   body .left_side #menu_section .options_container .select_font_body .select_item {
     font-size: 0.8rem;
-  }
-  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(1) {
-    font-family: "Onest", sans-serif;
-  }
-  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(2) {
-    font-family: "Geologica", sans-serif;
-  }
-  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(3) {
-    font-family: "Gideon Roman", serif;
-  }
-  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(4) {
-    font-family: "Playfair", serif;
-  }
-  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(5) {
-    font-family: "Ubuntu Mono", monospace;
-  }
-  body .left_side #menu_section .options_container .select_font_body .select_item:nth-child(6) {
-    font-family: "Courier Prime", monospace;
   }
   body .left_side #menu_section .embed_link_container {
     width: 100%;
@@ -128,6 +103,7 @@
     width: 100%;
   }
   body .right_side {
+    order: 1;
     height: auto !important;
     max-width: 400px !important;
   }
