@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		let url = new URL(window.location.href);
 		let defaultLink = url.href;
 
-		defaultLink = defaultLink.replace("index", "r");
+		defaultLink = defaultLink.replace("index.html", "p/");
 
 		//  The variables of the chosen options
 		let chosenSize = document.querySelector(".select_widget_size .mySelect").dataset.size;

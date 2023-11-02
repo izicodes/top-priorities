@@ -1,10 +1,10 @@
 @import "miscs";
 
 :root {
-	--bg-colour: #ffffff;
-	--main-colour: #c8c8c8;
-	--secondary-colour: #898989;
-	--text-colour: #555555;
+	--bg-colour: #f1f0f0;
+	--main-colour: #cbb7ac;
+	--secondary-colour: #8b7866;
+	--text-colour: #5d4e3f;
 }
 
 .green {
@@ -82,6 +82,14 @@ body {
 			-moz-border-radius: 5px;
 			-ms-border-radius: 5px;
 			-o-border-radius: 5px;
+
+			#fqaLink {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				font-size: 2rem;
+				color: #5d4e3f;
+			}
 
 			/* Chrome, Edge and Safari */
 			&::-webkit-scrollbar {
@@ -331,6 +339,125 @@ body {
 					text-align: justify;
 				}
 			}
+		}
+	}
+
+	// The FQAs Section
+	#help_section {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 30%;
+		background-color: var(--bg-colour);
+		padding: 15px;
+		padding-left: 25px;
+		border-radius: 20px;
+		color: #474746;
+		box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+		font-family: "Onest", sans-serif;
+		position: relative;
+		max-height: 50%;
+		overflow: auto;
+
+		/* Chrome, Edge and Safari */
+		&::-webkit-scrollbar {
+			height: 8px;
+			width: 25px;
+		}
+
+		&::-webkit-scrollbar-track {
+			border-radius: 40px;
+			-webkit-border-radius: 40px;
+			-moz-border-radius: 40px;
+			-ms-border-radius: 40px;
+			-o-border-radius: 40px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: #8b7866;
+			border-radius: 10px;
+			border: 10px solid #f1f0f0;
+			cursor: grab;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #5d4e3f;
+			cursor: grab;
+		}
+
+		&::-webkit-scrollbar-thumb:active {
+			background-color: #5d4e3f;
+			cursor: grab;
+		}
+
+		#backLink{
+			position: absolute;
+			top: 30px;
+			left: 20px;
+			color: var(--text-colour);
+			font-size: 2rem;
+
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			width: 100%;
+
+			p {
+				padding: 5px 0;
+			}
+
+			ol,
+			ul {
+				margin-left: 25px;
+
+				li {
+					padding: 2px 0;
+				}
+			}
+
+			code {
+				font-family: "Courier Prime", monospace;
+				background-color: white;
+				padding: 2px 6px;
+				border-radius: 6px;
+				-webkit-border-radius: 6px;
+				-moz-border-radius: 6px;
+				-ms-border-radius: 6px;
+				-o-border-radius: 6px;
+			}
+		}
+
+		h1,
+		h2,
+		h3 {
+			padding-left: 10px;
+			font-weight: 400;
+			width: 100%;
+			text-align: left;
+			color: var(--text-colour);
+		}
+
+		h1 {
+			padding: 7px 10px;
+			font-family: "Bacasime Antique", serif;
+			font-weight: 600;
+			font-size: 2.5rem;
+			border-bottom: 2px solid var(--secondary-colour);
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		h2 {
+			border-left: 4px solid #5d4e3f;
+			margin-bottom: 10px;
 		}
 	}
 
