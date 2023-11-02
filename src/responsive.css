@@ -158,6 +158,7 @@
   }
   #help_section #backLink {
     left: 30px !important;
+    top: 28px !important;
     font-size: 1.8rem !important;
   }
   #help_section h1,
@@ -173,7 +174,7 @@
     padding: 7px 10px;
     font-family: "Bacasime Antique", serif;
     font-weight: 600;
-    font-size: 2.2rem !important;
+    font-size: 1.8rem !important;
     border-bottom: 2px solid var(--secondary-colour);
     text-align: center;
     margin-bottom: 25px;
@@ -181,6 +182,6 @@
   #help_section h2 {
     border-left: 4px solid #5d4e3f;
     margin-bottom: 10px;
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
 }/*# sourceMappingURL=responsive.css.map */
