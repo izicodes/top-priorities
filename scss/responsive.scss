@@ -9,14 +9,17 @@
 		overflow-x: hidden;
 		max-height: 80vh;
 		gap: 10%;
+        max-width: 100%;
+        justify-items: center;
+        // padding-right: 10px;
 
 		.left_side {
 			justify-content: center !important;
+            max-width: 100% !important;
 
 			/* The Menu Section */
 			#menu_section {
-				max-width: 100% !important;
-				width: 80% !important;
+				max-width: 350px !important;
 				margin-top: 40px;
 				padding: 35px;
 				padding-right: 35px;
@@ -124,7 +127,7 @@
 
 						button {
 							padding: 6px;
-							font-size: 0.9rem;
+							font-size: 0.8rem;
                             width: 100%;
 						}
 					}
@@ -134,16 +137,17 @@
 
 		.right_side {
 			height: auto !important;
-			width: 100%;
+            max-width: 400px !important;
+
 
 			#render_section {
 				margin-bottom: 70px;
-				transform: scale(0.9);
-				-webkit-transform: scale(0.9);
-				-moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				-o-transform: scale(0.9);
-			}
+				transform: scale(0.75);
+				-webkit-transform: scale(0.75);
+				-moz-transform: scale(0.75);
+				-ms-transform: scale(0.75);
+				-o-transform: scale(0.75);
+}
 		}
 	}
 
