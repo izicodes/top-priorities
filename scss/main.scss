@@ -195,10 +195,6 @@ body {
 						padding: 6px 0;
 					}
 
-					p {
-						text-align: justify;
-					}
-
 					input {
 						border: 2px solid #cbb7ac;
 						border-radius: 7px;
@@ -349,8 +345,8 @@ body {
 		flex-direction: column;
 		width: 30%;
 		background-color: var(--bg-colour);
-		padding: 15px;
-		padding-left: 25px;
+		padding: 25px;
+		padding-left: 35px;
 		border-radius: 20px;
 		color: #474746;
 		box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
@@ -359,6 +355,35 @@ body {
 		max-height: 50%;
 		overflow: auto;
 
+		figure {
+			width: 100%;
+			@include flex(column);
+			gap: 4px;
+
+			img {
+				width: 50%;
+			}
+			video {
+				width: 80%;
+				margin-bottom: 20px;
+			}
+
+			figcaption {
+				font-size: 0.9rem;
+				padding-bottom: 4px;
+			border-bottom: 1px solid #5d4e3f;
+			}
+		}
+
+		footer {
+			border-top: 2px solid var(--secondary-colour);
+			padding-top: 10px;
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		
 		/* Chrome, Edge and Safari */
 		&::-webkit-scrollbar {
 			height: 8px;
@@ -397,8 +422,8 @@ body {
 
 		#backLink{
 			position: absolute;
-			top: 30px;
-			left: 20px;
+			top: 39px;
+			left: 40px;
 			color: var(--text-colour);
 			font-size: 2rem;
 
@@ -411,7 +436,7 @@ body {
 			width: 100%;
 
 			p {
-				padding: 5px 0;
+				padding: 8px 0;
 			}
 
 			ol,
@@ -419,7 +444,7 @@ body {
 				margin-left: 25px;
 
 				li {
-					padding: 2px 0;
+					padding: 4px 0;
 				}
 			}
 
@@ -452,7 +477,7 @@ body {
 			font-size: 2.5rem;
 			border-bottom: 2px solid var(--secondary-colour);
 			text-align: center;
-			margin-bottom: 10px;
+			margin-bottom: 25px;
 		}
 
 		h2 {
@@ -578,4 +603,14 @@ body {
 	opacity: 0.2;
 	position: absolute;
 	bottom: -1000px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--secondary-colour);
+	font-weight: bold;
+
+	&:hover {
+		color: var(--main-colour);
+	}
 }
