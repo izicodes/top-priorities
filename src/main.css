@@ -343,6 +343,7 @@ body #help_section {
   /* Chrome, Edge and Safari */
 }
 body #help_section figure {
+  padding: 10px 0;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -356,6 +356,7 @@ body {
 		overflow: auto;
 
 		figure {
+			padding: 10px 0;
 			width: 100%;
 			@include flex(column);
 			gap: 4px;
