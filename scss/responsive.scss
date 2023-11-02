@@ -4,12 +4,27 @@
 @media screen and (max-width: 500px) {
 	body #menu_section {
 		max-width: 350px !important;
-		margin-top: 40px;
-		padding: 35px;
+		margin-top: 60px;
+		padding: 25px !important;
 		padding-right: 35px;
 	}
+
+	#fqaLink {
+		top: 10px !important;
+		left: 10px !important;
+		font-size: 1.6rem;
+		color: #5d4e3f;
+	}
+
+	footer {
+		font-size: 0.9rem;
+
+		a {
+			text-decoration: underline wavy #cbb7ac;
+		}
+	}
 }
-@media screen and (min-width: 501px) and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 900px) {
 	body #menu_section {
 		max-width: 450px !important;
 		margin-top: 40px;
@@ -18,7 +33,7 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	body {
 		grid-template-rows: auto;
 		grid-template-columns: 1fr;
@@ -127,7 +142,7 @@
 
 	.hide {
 		top: -508px;
-		bottom: 1168px;
+		bottom: 2168px;
 	}
 }
 
