@@ -147,7 +147,7 @@
     width: 90% !important;
   }
   #help_section figure figcaption {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
   }
   #help_section footer {
     border-top: 2px solid var(--secondary-colour);
@@ -160,6 +160,13 @@
     left: 30px !important;
     top: 28px !important;
     font-size: 1.8rem !important;
+  }
+  #help_section .container p {
+    font-size: 0.9rem !important;
+  }
+  #help_section .container ol,
+  #help_section .container ul {
+    font-size: 0.9rem !important;
   }
   #help_section h1,
   #help_section h2,

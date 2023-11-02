@@ -155,7 +155,6 @@
 		padding-left: 25px !important;
 
 		figure {
-
 			img {
 				width: 80% !important;
 			}
@@ -165,7 +164,7 @@
 			}
 
 			figcaption {
-				font-size: 0.8rem !important;
+				font-size: 0.75rem !important;
 			}
 		}
 
@@ -181,6 +180,17 @@
 			left: 30px !important;
 			top: 28px !important;
 			font-size: 1.8rem !important;
+		}
+
+		.container {
+			p {
+				font-size: 0.9rem !important;
+			}
+
+			ol,
+			ul {
+				font-size: 0.9rem !important;
+			}
 		}
 
 		h1,
@@ -207,7 +217,6 @@
 			border-left: 4px solid #5d4e3f;
 			margin-bottom: 10px;
 			font-size: 1.2rem !important;
-
 		}
 	}
 }
