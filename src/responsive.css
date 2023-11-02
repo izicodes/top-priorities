@@ -127,7 +127,6 @@
   body .left_side {
     justify-content: center !important;
     max-width: 100% !important;
-    order: -1;
     /* The Menu Section */
   }
   body .left_side #menu_section .title_container {
@@ -148,7 +147,7 @@
     width: 100%;
   }
   body .left_side #menu_section .options_container h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
   }
   body .left_side #menu_section .options_container .select_item {
@@ -165,7 +164,7 @@
     width: 100%;
   }
   body .left_side #menu_section .embed_link_container h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
     text-align: left;
   }

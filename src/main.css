@@ -112,7 +112,6 @@ body .left_side #menu_section::-webkit-scrollbar {
 }
 body .left_side #menu_section::-webkit-scrollbar-track {
   border-radius: 40px;
-  box-shadow: inset 0 0 10px 10px green;
   border: solid 50px transparent;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;

@@ -299,12 +299,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			linkTextInput.select();
 			linkTextInput.setSelectionRange(0, 99999); // For mobile devices
 			navigator.clipboard.writeText(linkTextInput.value);
-			linkTextInput.style.boxShadow = "0px 0px 4px #58ac5cdf";
+			linkTextInput.blur();
+			linkTextInput.style.color = "#58ac5cdf";
 
 			setTimeout(() => {
-				linkTextInput.style.boxShadow = "none";
-				linkTextInput.selectionStart = linkTextInput.selectionEnd;
-			}, 1500);
+				linkTextInput.style.color = "#535352";
+			}, 1000);
 		}
 	});
 });
