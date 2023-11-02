@@ -7,6 +7,7 @@
 		margin-top: 60px;
 		padding: 25px !important;
 		padding-right: 35px;
+		height: 360px !important;
 	}
 
 	#fqaLink {
@@ -23,6 +24,61 @@
 			text-decoration: underline wavy #cbb7ac;
 		}
 	}
+
+	// The FQAs Section
+	#help_section {
+		width: 90% !important;
+		max-height: 100% !important;
+		margin-top: 150px;
+		padding-left: 25px !important;
+
+		figure {
+			img {
+				width: 80% !important;
+			}
+
+			video {
+				width: 90% !important;
+			}
+
+			figcaption {
+				font-size: 0.75rem !important;
+			}
+		}
+
+		footer {
+			border-top: 2px solid var(--secondary-colour);
+			padding-top: 10px;
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		#backLink {
+			left: 30px !important;
+			top: 28px !important;
+			font-size: 1.8rem !important;
+		}
+
+		.container {
+			p {
+				font-size: 0.9rem !important;
+			}
+
+			ol,
+			ul {
+				font-size: 0.9rem !important;
+			}
+		}
+
+		h1 {
+			font-size: 1.8rem !important;
+		}
+
+		h2 {
+			font-size: 1.2rem !important;
+		}
+	}
 }
 
 /* Mid Screens */
@@ -32,6 +88,54 @@
 		margin-top: 40px;
 		padding: 35px;
 		padding-right: 35px;
+	}
+
+	// The FQAs Section
+	#help_section {
+		width: 90% !important;
+		max-height: 100% !important;
+		margin-top: 150px;
+		padding-left: 25px !important;
+
+		figure {
+			img {
+				width: 50% !important;
+			}
+
+			video {
+				width: 70% !important;
+			}
+
+			figcaption {
+				font-size: 0.9rem !important;
+			}
+		}
+
+		// delete
+		#backLink {
+			left: 30px !important;
+			top: 28px !important;
+			font-size: 1.8rem !important;
+		}
+
+		.container {
+			p {
+				font-size: 1.1rem !important;
+			}
+
+			ol,
+			ul {
+				font-size: 1.1rem !important;
+			}
+		}
+
+		h1 {
+			font-size: 1.9rem !important;
+		}
+
+		h2 {
+			font-size: 1.3rem !important;
+		}
 	}
 }
 
@@ -148,75 +252,57 @@
 	}
 
 	// The FQAs Section
-	#help_section {
-		width: 90% !important;
-		max-height: 100% !important;
-		margin-top: 150px;
-		padding-left: 25px !important;
+	// #help_section {
+	// 	width: 90% !important;
+	// 	max-height: 100% !important;
+	// 	margin-top: 150px;
+	// 	padding-left: 25px !important;
 
-		figure {
-			img {
-				width: 80% !important;
-			}
+	// 	figure {
+	// 		img {
+	// 			width: 80% !important;
+	// 		}
 
-			video {
-				width: 90% !important;
-			}
+	// 		video {
+	// 			width: 90% !important;
+	// 		}
 
-			figcaption {
-				font-size: 0.75rem !important;
-			}
-		}
+	// 		figcaption {
+	// 			font-size: 0.75rem !important;
+	// 		}
+	// 	}
 
-		footer {
-			border-top: 2px solid var(--secondary-colour);
-			padding-top: 10px;
-			width: 100%;
-			margin-top: 20px;
-			text-align: center;
-		}
+	// 	footer {
+	// 		border-top: 2px solid var(--secondary-colour);
+	// 		padding-top: 10px;
+	// 		width: 100%;
+	// 		margin-top: 20px;
+	// 		text-align: center;
+	// 	}
 
-		#backLink {
-			left: 30px !important;
-			top: 28px !important;
-			font-size: 1.8rem !important;
-		}
+	// 	#backLink {
+	// 		left: 30px !important;
+	// 		top: 28px !important;
+	// 		font-size: 1.8rem !important;
+	// 	}
 
-		.container {
-			p {
-				font-size: 0.9rem !important;
-			}
+	// 	.container {
+	// 		p {
+	// 			font-size: 0.9rem !important;
+	// 		}
 
-			ol,
-			ul {
-				font-size: 0.9rem !important;
-			}
-		}
+	// 		ol,
+	// 		ul {
+	// 			font-size: 0.9rem !important;
+	// 		}
+	// 	}
 
-		h1,
-		h2,
-		h3 {
-			padding-left: 10px;
-			font-weight: 400;
-			width: 100%;
-			text-align: left;
-			color: var(--text-colour);
-		}
+	// 	h1 {
+	// 		font-size: 1.8rem !important;
+	// 	}
 
-		h1 {
-			padding: 7px 10px;
-			font-family: "Bacasime Antique", serif;
-			font-weight: 600;
-			font-size: 1.8rem !important;
-			border-bottom: 2px solid var(--secondary-colour);
-			text-align: center;
-			margin-bottom: 25px;
-		}
-
-		h2 {
-			border-left: 4px solid #5d4e3f;
-			margin-bottom: 10px;
-			font-size: 1.2rem !important;
-		}
-	}
+	// 	h2 {
+	// 		font-size: 1.2rem !important;
+	// 	}
+	// }
 }
