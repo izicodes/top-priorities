@@ -296,24 +296,43 @@
 			top: 28px !important;
 			font-size: 1.8rem !important;
 		}
+	}
+}
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+	
+	// The FQAs Section
+	#help_section {
+		width: 50% !important;
+		max-height: 60% !important;
+		margin-top: 0px;
+		padding-left: 25px !important;
 
-		// .container {
-		// 	p {
-		// 		font-size: 0.9rem !important;
-		// 	}
+		figure {
+			img {
+				width: 60% !important;
+			}
 
-		// 	ol,
-		// 	ul {
-		// 		font-size: 0.9rem !important;
-		// 	}
-		// }
+			video {
+				width: 60% !important;
+			}
 
-		// h1 {
-		// 	font-size: 1.8rem !important;
-		// }
+			figcaption {
+				font-size: 0.75rem !important;
+			}
+		}
 
-		// h2 {
-		// 	font-size: 1.2rem !important;
-		// }
+		footer {
+			border-top: 2px solid var(--secondary-colour);
+			padding-top: 10px;
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		#backLink {
+			left: 30px !important;
+			top: 28px !important;
+			font-size: 1.8rem !important;
+		}
 	}
 }

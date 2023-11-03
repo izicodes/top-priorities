@@ -239,4 +239,33 @@
     top: 28px !important;
     font-size: 1.8rem !important;
   }
+}
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  #help_section {
+    width: 50% !important;
+    max-height: 60% !important;
+    margin-top: 0px;
+    padding-left: 25px !important;
+  }
+  #help_section figure img {
+    width: 60% !important;
+  }
+  #help_section figure video {
+    width: 60% !important;
+  }
+  #help_section figure figcaption {
+    font-size: 0.75rem !important;
+  }
+  #help_section footer {
+    border-top: 2px solid var(--secondary-colour);
+    padding-top: 10px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #help_section #backLink {
+    left: 30px !important;
+    top: 28px !important;
+    font-size: 1.8rem !important;
+  }
 }/*# sourceMappingURL=responsive.css.map */
