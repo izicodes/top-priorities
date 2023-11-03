@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		let chosenTitleFont = document.querySelector(".select_font_title .mySelect").dataset.tfont;
 		let chosenBodyFont = document.querySelector(".select_font_body .mySelect").dataset.bfont;
 
-		let query = "?size=" + chosenSize + "&theme=" + chosenTheme + "&tfont=" + chosenTitleFont + "&bfont=" + chosenBodyFont + "&widget=" + widgetID;
+		let query = "p/?size=" + chosenSize + "&theme=" + chosenTheme + "&tfont=" + chosenTitleFont + "&bfont=" + chosenBodyFont + "&widget=" + widgetID;
 
 		let newLink = defaultLink + query;
 
