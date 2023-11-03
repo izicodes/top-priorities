@@ -19,10 +19,6 @@
 
 	footer {
 		font-size: 0.9rem;
-
-		a {
-			text-decoration: underline wavy #cbb7ac;
-		}
 	}
 
 	// The FQAs Section
@@ -111,13 +107,6 @@
 			}
 		}
 
-		// delete
-		#backLink {
-			left: 30px !important;
-			top: 28px !important;
-			font-size: 1.8rem !important;
-		}
-
 		.container {
 			p {
 				font-size: 1.1rem !important;
@@ -135,6 +124,30 @@
 
 		h2 {
 			font-size: 1.3rem !important;
+		}
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+	// The FQAs Section
+	#help_section {
+		.container {
+			p {
+				font-size: 1.2rem !important;
+			}
+
+			ol,
+			ul {
+				font-size: 1.2rem !important;
+			}
+		}
+
+		h1 {
+			font-size: 2rem !important;
+		}
+
+		h2 {
+			font-size: 1.5rem !important;
 		}
 	}
 }
@@ -230,7 +243,6 @@
 		}
 
 		.right_side {
-			order: 1;
 			height: auto !important;
 			max-width: 400px !important;
 
@@ -251,57 +263,57 @@
 	}
 
 	// The FQAs Section
-	// #help_section {
-	// 	width: 90% !important;
-	// 	max-height: 100% !important;
-	// 	margin-top: 150px;
-	// 	padding-left: 25px !important;
+	#help_section {
+		width: 90% !important;
+		max-height: 100% !important;
+		margin-top: 150px;
+		padding-left: 25px !important;
 
-	// 	figure {
-	// 		img {
-	// 			width: 80% !important;
-	// 		}
+		figure {
+			img {
+				width: 60% !important;
+			}
 
-	// 		video {
-	// 			width: 90% !important;
-	// 		}
+			video {
+				width: 80% !important;
+			}
 
-	// 		figcaption {
-	// 			font-size: 0.75rem !important;
-	// 		}
-	// 	}
+			figcaption {
+				font-size: 0.75rem !important;
+			}
+		}
 
-	// 	footer {
-	// 		border-top: 2px solid var(--secondary-colour);
-	// 		padding-top: 10px;
-	// 		width: 100%;
-	// 		margin-top: 20px;
-	// 		text-align: center;
-	// 	}
+		footer {
+			border-top: 2px solid var(--secondary-colour);
+			padding-top: 10px;
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+		}
 
-	// 	#backLink {
-	// 		left: 30px !important;
-	// 		top: 28px !important;
-	// 		font-size: 1.8rem !important;
-	// 	}
+		#backLink {
+			left: 30px !important;
+			top: 28px !important;
+			font-size: 1.8rem !important;
+		}
 
-	// 	.container {
-	// 		p {
-	// 			font-size: 0.9rem !important;
-	// 		}
+		// .container {
+		// 	p {
+		// 		font-size: 0.9rem !important;
+		// 	}
 
-	// 		ol,
-	// 		ul {
-	// 			font-size: 0.9rem !important;
-	// 		}
-	// 	}
+		// 	ol,
+		// 	ul {
+		// 		font-size: 0.9rem !important;
+		// 	}
+		// }
 
-	// 	h1 {
-	// 		font-size: 1.8rem !important;
-	// 	}
+		// h1 {
+		// 	font-size: 1.8rem !important;
+		// }
 
-	// 	h2 {
-	// 		font-size: 1.2rem !important;
-	// 	}
-	// }
+		// h2 {
+		// 	font-size: 1.2rem !important;
+		// }
+	}
 }

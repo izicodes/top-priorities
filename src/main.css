@@ -558,7 +558,8 @@ body #render_section .container .itemBox .checkmark {
 }
 
 a {
-  text-decoration: none;
+  -webkit-text-decoration: underline wavy #cbb7ac;
+          text-decoration: underline wavy #cbb7ac;
   color: var(--secondary-colour);
   font-weight: bold;
 }
